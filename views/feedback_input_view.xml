@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--        Tree View-->
+        <record id="view_feedback_input_tree" model="ir.ui.view">
+            <field name="name">feedback.input.tree</field>
+            <field name="model">feedback.input</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" string="Employee Name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--        Form View-->
+        <record id="view_feedback_input_form" model="ir.ui.view">
+            <field name="name">feedback.input.form</field>
+            <field name="model">feedback.input</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                    </sheet>
+                    <!--        Chatter-->
+<!--                    <div class="oe_chatter">-->
+<!--                        <field name="message_follower_ids" groups="base.group_user"/>-->
+<!--                        <field name="activity_ids"/>-->
+<!--                        <field name="message_ids"/>-->
+<!--                    </div>-->
+                </form>
+            </field>
+        </record>
+
+
+<!--        &lt;!&ndash;        Search View&ndash;&gt;-->
+<!--        <record id="view_hospital_patient_search" model="ir.ui.view">-->
+<!--            <field name="name">hospital.patient.search</field>-->
+<!--            <field name="model">hospital.patient</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <search>-->
+<!--                    <field name="name" filter_domain="['|', ('name', 'ilike', self), ('ref', 'ilike', self)]"/>-->
+<!--                    <field name="ref"/>-->
+<!--                    <field name="age"/>-->
+<!--                    <filter name="filter_male" string="Male Patient" domain="[('gender', '=', 'male')]"/>-->
+<!--                    <filter name="filter_female" string="Female Patient" domain="[('gender', '=', 'female')]"/>-->
+<!--                    <separator/>-->
+<!--&lt;!&ndash;                    <filter name="filter_kids" string="Kids Patient" domain="[('age', '&lt;=', 15)]"/>&ndash;&gt;-->
+<!--                    <filter name="filter_archived" string="Archived" domain="[('active', '=', False)]"/>-->
+<!--                    <group expand="0" string="Group By">-->
+<!--                        <filter string="Gender" name="group_by_gender" context="{'group_by':'gender'}"/>-->
+<!--                    </group>-->
+<!--                    <searchpanel>-->
+<!--                        <field name="gender" string="Gender" enable_counters="1" icon="fa-building" select="multi"/>-->
+<!--                    </searchpanel>-->
+<!--                </search>-->
+<!--            </field>-->
+<!--        </record>-->
+
+        <!--        action-->
+        <record id="action_feedback_input" model="ir.actions.act_window">
+            <field name="name">Feedback</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">feedback.input</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <!--            <field name="context">{'search_default_filter_male': 1, 'search_default_group_by_gender': 1}</field>-->
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Input Form
+                </p>
+            </field>
+        </record>
+
+        <menuitem
+                id="menu_feedback"
+                action="action_feedback_input"
+                name="Feedback"
+                sequence="0"
+                parent="menu_feedback_master"/>
+    </data>
+</odoo>
