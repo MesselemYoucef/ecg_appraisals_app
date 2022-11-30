@@ -7,7 +7,7 @@
             <field name="model">feedback.input</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name" string="Employee Name"/>
+                    <field name="employee_id" string="Employee Name"/>
                 </tree>
             </field>
         </record>
@@ -19,44 +19,41 @@
             <field name="arch" type="xml">
                 <form>
                     <sheet>
+                        <div class="oe-title">
+                            <h1>
+                                <field name="employee_id"/>
+                            </h1>
+                        </div>
+                        <group>
+
+
                             <group>
-                                <field name="name"/>
+                                <field name="mobile_phone" string="Mobile"/>
+                                <field name="work_email" string="Work Email"/>
                             </group>
+                            <group>
+                                <field name="manager" string="Manager"/>
+                                <field name="coach" string="Coach"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="employee_view" string="Employee View">
+                            </page>
+                            <page name="manager_view" string="Manager View">
+                            </page>
+                            <page name="ceo_view" string="Ceo View">
+                            </page>
+                        </notebook>
                     </sheet>
-                    <!--        Chatter-->
-<!--                    <div class="oe_chatter">-->
-<!--                        <field name="message_follower_ids" groups="base.group_user"/>-->
-<!--                        <field name="activity_ids"/>-->
-<!--                        <field name="message_ids"/>-->
-<!--                    </div>-->
+                    Chatter
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" groups="base.group_user"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
                 </form>
             </field>
         </record>
-
-
-<!--        &lt;!&ndash;        Search View&ndash;&gt;-->
-<!--        <record id="view_hospital_patient_search" model="ir.ui.view">-->
-<!--            <field name="name">hospital.patient.search</field>-->
-<!--            <field name="model">hospital.patient</field>-->
-<!--            <field name="arch" type="xml">-->
-<!--                <search>-->
-<!--                    <field name="name" filter_domain="['|', ('name', 'ilike', self), ('ref', 'ilike', self)]"/>-->
-<!--                    <field name="ref"/>-->
-<!--                    <field name="age"/>-->
-<!--                    <filter name="filter_male" string="Male Patient" domain="[('gender', '=', 'male')]"/>-->
-<!--                    <filter name="filter_female" string="Female Patient" domain="[('gender', '=', 'female')]"/>-->
-<!--                    <separator/>-->
-<!--&lt;!&ndash;                    <filter name="filter_kids" string="Kids Patient" domain="[('age', '&lt;=', 15)]"/>&ndash;&gt;-->
-<!--                    <filter name="filter_archived" string="Archived" domain="[('active', '=', False)]"/>-->
-<!--                    <group expand="0" string="Group By">-->
-<!--                        <filter string="Gender" name="group_by_gender" context="{'group_by':'gender'}"/>-->
-<!--                    </group>-->
-<!--                    <searchpanel>-->
-<!--                        <field name="gender" string="Gender" enable_counters="1" icon="fa-building" select="multi"/>-->
-<!--                    </searchpanel>-->
-<!--                </search>-->
-<!--            </field>-->
-<!--        </record>-->
 
         <!--        action-->
         <record id="action_feedback_input" model="ir.actions.act_window">

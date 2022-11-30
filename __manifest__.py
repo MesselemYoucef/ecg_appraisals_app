@@ -10,12 +10,14 @@
     'Licence': 'LGPL-3',
     'images': [],
     'depends': [
-        'base'
+        'base',
+        'mail',
+        'hr'
     ],
     'data': [
         'security/ir.model.access.csv',
         'views/menu.xml',
-        'views/feedback_input_view.xml'
+        'views/feedback_input_view.xml',
     ],
     'demo': [],
     'qweb': [],
