@@ -18,6 +18,13 @@
             <field name="model">feedback.input</field>
             <field name="arch" type="xml">
                 <form>
+                    <header>
+                        <button name="action_employee" type="object" string="Employee Submit" class="btn-primary"/>
+                        <button name="action_manager" type="object" string="Manager Submit" class="btn-primary"/>
+                        <button name="action_ceo" type="object" string="CEO Submit" class="btn-primary"/>
+                        <button name="action_cancel" type="object" string="Cancel" class="btn-primary"/>
+                        <field name="input_status" widget="statusbar" statusbar_visible="draft,employee_approved,manager_approved,ceo_approved"/>
+                    </header>
                     <sheet>
                         <div class="oe-title">
                             <h1>
@@ -45,7 +52,6 @@
                             </page>
                         </notebook>
                     </sheet>
-                    Chatter
                     <div class="oe_chatter">
                         <field name="message_follower_ids" groups="base.group_user"/>
                         <field name="activity_ids"/>
