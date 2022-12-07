@@ -7,8 +7,8 @@ class FeedbackInput(models.Model):
     _description = "Feedback From"
     _rec_name = 'employee_id'
 
-    # name = fields.Char(String="Employee Reference", required=True, copy=False,
-    #                    readonly=True, default= lambda self: _('New'))
+    reference = fields.Char(String="Input Reference", required=True, copy=False,
+                            readonly=True, default=lambda self: _('New'))
     employee_id = fields.Many2one("hr.employee", String="Employee Name", required=True)
 
     mobile_phone = fields.Char(related="employee_id.mobile_phone")
@@ -39,3 +39,11 @@ class FeedbackInput(models.Model):
     def action_cancel(self):
         for rec in self:
             rec.input_status = 'cancel'
+
+    @api.model
+    def create(self, vals):
+        if vals.get('reference', _("New")) == _("New"):
+            vals['reference'] = self.env['ir.sequence'].next_by_code(
+                'feedback.input') or _("New")
+        res = super(FeedbackInput, self).create(vals)
+        return res

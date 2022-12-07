@@ -16,6 +16,7 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        'data/data.xml',
         'views/menu.xml',
         'views/feedback_input_view.xml',
     ],
