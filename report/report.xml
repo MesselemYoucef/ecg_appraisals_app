@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_employee_appraisal" model="ir.actions.report">
+        <field name="name">Employee Appraisal</field>
+        <field name="model">feedback.input</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ecg_appraisals_app.report_employee_appraisal</field>
+        <field name="report_file">ecg_appraisals_app.report_employee_appraisal</field>
+        <field name="binding_model_id" ref="model_feedback_input"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
