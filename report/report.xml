@@ -4,8 +4,8 @@
         <field name="name">Employee Appraisal</field>
         <field name="model">feedback.input</field>
         <field name="report_type">qweb-pdf</field>
-        <field name="report_name">ecg_appraisals_app.report_employee_appraisal</field>
-        <field name="report_file">ecg_appraisals_app.report_employee_appraisal</field>
+        <field name="report_name">ecg_appraisals_app.report_employee_appraisal_id</field>
+        <field name="report_file">ecg_appraisals_app.report_employee_appraisal_id</field>
         <field name="binding_model_id" ref="model_feedback_input"/>
         <field name="binding_type">report</field>
     </record>

@@ -19,7 +19,8 @@
         'data/data.xml',
         'views/menu.xml',
         'views/feedback_input_view.xml',
-        'report/report.xml'
+        'report/employee_report.xml',
+        'report/report.xml',
     ],
     'demo': [],
     'qweb': [],
