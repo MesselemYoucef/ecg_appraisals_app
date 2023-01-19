@@ -26,10 +26,11 @@
                         <button name="action_manager" type="object" string="Manager Submit" class="btn-primary"/>
                         <button name="action_ceo" type="object" string="CEO Submit" class="btn-primary"/>
                         <button name="action_cancel" type="object" string="Cancel" class="btn-primary"/>
-                        <field name="input_status" widget="statusbar" statusbar_visible="draft,employee_approved,manager_approved,ceo_approved"/>
+                        <field name="input_status" widget="statusbar"
+                               statusbar_visible="draft,employee_approved,manager_approved,ceo_approved"/>
                     </header>
                     <sheet>
-                       <div class="oe-title">
+                        <div class="oe-title">
                             <h1>
                                 <field name="reference"/>
                             </h1>
@@ -41,10 +42,12 @@
                                 <field name="employee_id"/>
                                 <field name="mobile_phone" string="Mobile"/>
                                 <field name="work_email" string="Work Email"/>
+                                 <field name="manager" string="Manager"/>
+                                <field name="coach" string="Coach"/>
                             </group>
                             <group>
-                                <field name="manager" string="Manager"/>
-                                <field name="coach" string="Coach"/>
+                                <field name="photo" widget="image"/>
+
                             </group>
                         </group>
                         <notebook>

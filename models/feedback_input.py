@@ -10,6 +10,8 @@ class FeedbackInput(models.Model):
     reference = fields.Char(String="Input Reference", required=True, copy=False,
                             readonly=True, default=lambda self: _('New'))
     employee_id = fields.Many2one("hr.employee", String="Employee Name", required=True)
+    name = fields.Char(related="employee_id.name")
+    photo = fields.Image(related="employee_id.image_1920")
 
     mobile_phone = fields.Char(related="employee_id.mobile_phone")
     work_email = fields.Char(related="employee_id.work_email")
