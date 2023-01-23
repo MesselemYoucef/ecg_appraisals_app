@@ -46,7 +46,7 @@
                                 <field name="coach" string="Coach"/>
                             </group>
                             <group>
-                                <field name="photo" widget="image"/>
+                                <field name="photo" widget="image" class=""/>
 
                             </group>
                         </group>
