@@ -24,8 +24,8 @@
                                                      style="height:140px; width:120px;"/>
                                             </p>
                                         </td>
-                                        <td width="60%">
-                                            <table style="border: 1px solid red; padding-top=10px;">
+                                        <td width="60%" style="vertical-align: top;">
+                                            <table style="border: 0px solid transparent;">
                                                 <tr >
                                                     <td>
                                                         <p><strong>Name: </strong> </p>
