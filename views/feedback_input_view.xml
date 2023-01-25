@@ -36,13 +36,11 @@
                             </h1>
                         </div>
                         <group>
-
-
                             <group>
                                 <field name="employee_id"/>
                                 <field name="mobile_phone" string="Mobile"/>
                                 <field name="work_email" string="Work Email"/>
-                                 <field name="manager" string="Manager"/>
+                                <field name="manager" string="Manager"/>
                                 <field name="coach" string="Coach"/>
                             </group>
                             <group>
@@ -50,12 +48,84 @@
 
                             </group>
                         </group>
+                        <group>
+                            <group>
+                                <field name="brand_dev_awarness" string="Brand Development and Awareness"/>
+                                <field name="website_and_social" string="Website and Social Media Management"/>
+                                <field name="seo_opt" string="SEO Optimization"/>
+                            </group>
+                            <group>
+                                <field name="report_gen" string="Report Generation"/>
+                                <field name="community_management" string="Community Management"/>
+                                <field name="client_acquisition" string="Client Acquisition"/>
+                            </group>
+                        </group>
+                        <group class="oe_subtotal_footer">
+                            <field name="employee_evaluation" string="Evaluation Score"/>
+                        </group>
                         <notebook>
-                            <page name="employee_view" string="Employee View">
+                            <page name="direct_manager_rating" string="Direct Manager Rating">
+                                <h1>
+                                    Direct Manager Rating
+                                </h1>
+                                <group>
+                                    <group>
+                                        <field name="m_attendance" string="Attendance"/>
+                                        <field name="m_leaves" string="Leaves"/>
+                                        <field name="m_attitude" string="Attitude"/>
+                                        <field name="m_office_discipline" string="Office Discipline"/>
+                                    </group>
+                                    <group>
+                                        <field name="m_compliance" string="Compliance"/>
+                                        <field name="m_office_decorum" string="Office Decorum"/>
+                                        <field name="m_proactiveness" string="Proactiveness"/>
+                                    </group>
+                                </group>
+                                <group class="oe_subtotal_footer">
+                                    <field name="manager_rating" string="Direct Manager Rating"/>
+                                </group>
                             </page>
-                            <page name="manager_view" string="Manager View">
+                            <page name="hr_rating" string="HR Rating">
+                                <h1>
+                                    HR Rating
+                                </h1>
+                                <group>
+                                    <group>
+                                        <field name="hr_attendance" string="Attendance"/>
+                                        <field name="hr_leaves" string="Leaves"/>
+                                        <field name="hr_attitude" string="Attitude"/>
+                                        <field name="hr_office_discipline" string="Office Discipline"/>
+                                    </group>
+                                    <group>
+                                        <field name="hr_compliance" string="Compliance"/>
+                                        <field name="hr_office_decorum" string="Office Decorum"/>
+                                        <field name="hr_proactiveness" string="Proactiveness"/>
+                                    </group>
+                                </group>
+                                <group class="oe_subtotal_footer">
+                                    <field name="hr_rating" string="HR Rating"/>
+                                </group>
                             </page>
-                            <page name="ceo_view" string="Ceo View">
+                            <page name="ceo_rating" string="Ceo Rating">
+                                <h1>
+                                    CEO Rating
+                                </h1>
+                                <group>
+                                    <group>
+                                        <field name="ceo_attendance" string="Attendance"/>
+                                        <field name="ceo_leaves" string="Leaves"/>
+                                        <field name="ceo_attitude" string="Attitude"/>
+                                        <field name="ceo_office_discipline" string="Office Discipline"/>
+                                    </group>
+                                    <group>
+                                        <field name="ceo_compliance" string="Compliance"/>
+                                        <field name="ceo_office_decorum" string="Office Decorum"/>
+                                        <field name="ceo_proactiveness" string="Proactiveness"/>
+                                    </group>
+                                </group>
+                                <group class="oe_subtotal_footer">
+                                    <field name="ceo_rating" string="CEO Rating"/>
+                                </group>
                             </page>
                         </notebook>
                     </sheet>
