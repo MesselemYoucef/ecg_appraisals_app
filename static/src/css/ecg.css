@@ -1,0 +1,13 @@
+.rate-result {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.report-header{
+    text-align: center;
+}
+
+.rating-container{
+    padding-top: 50px;
+}

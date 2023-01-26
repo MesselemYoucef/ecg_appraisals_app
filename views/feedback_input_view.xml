@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <odoo>
     <data>
         <!--        Tree View-->
@@ -65,10 +66,10 @@
                         </group>
                         <notebook>
                             <page name="direct_manager_rating" string="Direct Manager Rating">
-                                <h1>
+                                <h1 class="report-header">
                                     Direct Manager Rating
                                 </h1>
-                                <group>
+                                <group class="rating-container">
                                     <group>
                                         <field name="m_attendance" string="Attendance"/>
                                         <field name="m_leaves" string="Leaves"/>
@@ -81,15 +82,15 @@
                                         <field name="m_proactiveness" string="Proactiveness"/>
                                     </group>
                                 </group>
-                                <group class="oe_subtotal_footer">
+                                <group class="rate-result">
                                     <field name="manager_rating" string="Direct Manager Rating"/>
                                 </group>
                             </page>
                             <page name="hr_rating" string="HR Rating">
-                                <h1>
+                                <h1 class="report-header">
                                     HR Rating
                                 </h1>
-                                <group>
+                                <group class="rating-container">
                                     <group>
                                         <field name="hr_attendance" string="Attendance"/>
                                         <field name="hr_leaves" string="Leaves"/>
@@ -102,15 +103,15 @@
                                         <field name="hr_proactiveness" string="Proactiveness"/>
                                     </group>
                                 </group>
-                                <group class="oe_subtotal_footer">
+                                <group class="rate-result">
                                     <field name="hr_rating" string="HR Rating"/>
                                 </group>
                             </page>
                             <page name="ceo_rating" string="Ceo Rating">
-                                <h1>
+                                <h1 class="report-header">
                                     CEO Rating
                                 </h1>
-                                <group>
+                                <group class="rating-container">
                                     <group>
                                         <field name="ceo_attendance" string="Attendance"/>
                                         <field name="ceo_leaves" string="Leaves"/>
@@ -123,7 +124,7 @@
                                         <field name="ceo_proactiveness" string="Proactiveness"/>
                                     </group>
                                 </group>
-                                <group class="oe_subtotal_footer">
+                                <group class=" rate-result">
                                     <field name="ceo_rating" string="CEO Rating"/>
                                 </group>
                             </page>
@@ -137,7 +138,6 @@
                 </form>
             </field>
         </record>
-
         <!--        action-->
         <record id="action_feedback_input" model="ir.actions.act_window">
             <field name="name">Feedback</field>

@@ -22,6 +22,11 @@
         'report/employee_report.xml',
         'report/report.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'ecg_appraisals_app/static/src/css/ecg.css'
+        ],
+    },
     'demo': [],
     'qweb': [],
     'installable': True,
