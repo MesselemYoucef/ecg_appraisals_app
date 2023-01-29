@@ -391,6 +391,8 @@ class FeedbackInput(models.Model):
 
     ceo_rating = fields.Char(compute="_compute_ceo_rating")
 
+    grand_ttl = fields.Char(compute="_compute_grand_ttl")
+
     # Logic
 
     def action_employee(self):
@@ -445,6 +447,13 @@ class FeedbackInput(models.Model):
                                       + int(rec.ceo_attitude) + int(rec.ceo_office_discipline) + int(rec.ceo_compliance) \
                                       + int(rec.ceo_office_decorum) + int(rec.ceo_proactiveness)
 
+    @api.depends('employee_evaluation', 'manager_rating', 'hr_rating', 'ceo_rating')
+    def _compute_grand_ttl(self):
+        for rec in self:
+            if rec.employee_evaluation and rec.manager_rating and rec.hr_rating and rec.ceo_rating:
+                rec.grand_ttl = int(rec.employee_evaluation) + int(rec.manager_rating) + int(rec.hr_rating) + int(rec.ceo_rating)
+            else:
+                rec.grand_ttl = 0
     @api.model
     def create(self, vals):
         if vals.get('reference', _("New")) == _("New"):

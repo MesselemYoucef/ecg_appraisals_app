@@ -6,7 +6,9 @@
                 <t t-call="web.external_layout">
                     <div class="page">
                         <div>
-                            <h1 style="text-align:center;"><strong>EMPLOYEE INFORMATION</strong></h1>
+                            <h1 style="text-align:center;">
+                                <strong>EMPLOYEE INFORMATION</strong>
+                            </h1>
                         </div>
 
                         <div class="oe_structure">
@@ -80,229 +82,311 @@
                                 </table>
 
                             </div>
-                               <h1 style="text-align: center;"><strong>EMPLOYEE RATING</strong></h1>
+                            <h1 style="text-align: center;">
+                                <strong>EMPLOYEE RATING</strong>
+                            </h1>
                             <div class="row">
-                                <table style="border: 1px solid black !important;">
-                                    <tr>
-                                        <td width="25%" style="vertical-align: top;">
-                                            <p>Brand and Awarness</p>
+                                <table style="border: 0px solid transparent !important;">
+                                    <tr style="height: 0px;">
+                                        <td width="16%" style="vertical-align: top;">
+                                            <p>Brand and Awareness:</p>
                                         </td>
-                                        <td width="25%" style="vertical-align: top;">
+                                        <td width="16%" style="vertical-align: top;">
                                             <span t-field="o.brand_dev_awarness"/>
                                         </td>
-                                        <td width="25%" style="vertical-align: top;">
-                                            <p>Report Generation</p>
+                                        <td width="16%" style="vertical-align: top;">
+                                            <p>Report Generation:</p>
                                         </td>
-                                        <td width="25%" style="vertical-align: top;">
+                                        <td width="16%" style="vertical-align: top;">
                                             <span t-field="o.report_gen"/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="25%">
-                                            <p>Website and Social Media Management</p>
+                                        <td width="16%">
+                                            <p>Website and Social Media Management:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.website_and_social"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Community Management</p>
-                                        </td>
-                                        <td width="25%">
-                                            <span t-field="o.community_management"/>
-                                        </td>
                                     </tr>
                                     <tr>
-                                        <td width="25%">
-                                            <p>SEO Optimization</p>
+                                        <td width="16%">
+                                            <p>Community Management:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
+                                            <span t-field="o.community_management"/>
+                                        </td>
+                                        <td width="16%">
+                                            <p>SEO Optimization:</p>
+                                        </td>
+                                        <td width="16%">
                                             <span t-field="o.seo_opt"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Client Acquisition</p>
+                                        <td width="16%">
+                                            <p>Client Acquisition:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.client_acquisition"/>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td width="16%" style="font-size:20px">
+                                            <strong>TTL:</strong>
+                                        </td>
+                                        <td width="16%" style="font-size:20px">
+                                            <strong>
+                                                <span t-field="o.employee_evaluation"/>
+                                            </strong>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
                                 </table>
                             </div>
-                            <h1 style="text-align: center;"><strong>MANAGER RATING</strong></h1>
+                            <h1 style="text-align: center;">
+                                <strong>MANAGER RATING</strong>
+                            </h1>
                             <div class="row">
-                                <table>
+                                <table style="border: 0px solid transparent !important;">
                                     <tr>
-                                        <td width="25%">
-                                            <p>Attendance</p>
+                                        <td width="16%">
+                                            <p>Attendance:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.m_attendance"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Compliance</p>
+                                        <td width="16%">
+                                            <p>Compliance:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.m_compliance"/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="25%">
-                                            <p>Leaves</p>
+                                        <td width="16%">
+                                            <p>Leaves:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.m_leaves"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Office Decorum</p>
-                                        </td>
-                                        <td width="25%">
-                                            <span t-field="o.m_office_decorum"/>
-                                        </td>
                                     </tr>
                                     <tr>
-                                        <td width="25%">
-                                            <p>Attitude</p>
+                                        <td width="16%">
+                                            <p>Office Decorum:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
+                                            <span t-field="o.m_office_decorum"/>
+                                        </td>
+                                        <td width="16%">
+                                            <p>Attitude:</p>
+                                        </td>
+                                        <td width="16%">
                                             <span t-field="o.m_attitude"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Proactiveness</p>
+                                        <td width="16%">
+                                            <p>Proactiveness:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.m_proactiveness"/>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="25%">
-                                            <p>Office Discipline</p>
+                                        <td width="16%">
+                                            <p>Office Discipline:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.m_office_discipline"/>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="16%" style="font-size:20px;">
+                                            <strong>TTL:</strong>
+                                        </td>
+                                        <td width="16%" style="font-size:20px;">
+                                            <strong>
+                                                <span t-field="o.manager_rating"/>
+                                            </strong>
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
                                         </td>
                                     </tr>
                                 </table>
                             </div>
-                            <h1 style="text-align: center;"><strong>HR RATING</strong></h1>
+                            <h1 style="text-align: center;">
+                                <strong>HR RATING</strong>
+                            </h1>
                             <div class="row">
-                                <table>
+                                <table style="border: 0px solid transparent !important;">
                                     <tr>
-                                        <td width="25%">
-                                            <p>Attendance</p>
+                                        <td width="16%">
+                                            <p>Attendance:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.hr_attendance"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Compliance</p>
+                                        <td width="16%">
+                                            <p>Compliance:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.hr_compliance"/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="25%">
-                                            <p>Leaves</p>
+                                        <td width="16%">
+                                            <p>Leaves:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.hr_leaves"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Office Decorum</p>
-                                        </td>
-                                        <td width="25%">
-                                            <span t-field="o.hr_office_decorum"/>
-                                        </td>
                                     </tr>
                                     <tr>
-                                        <td width="25%">
-                                            <p>Attitude</p>
+                                        <td width="16%">
+                                            <p>Office Decorum:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
+                                            <span t-field="o.hr_office_decorum"/>
+                                        </td>
+                                        <td width="16%">
+                                            <p>Attitude:</p>
+                                        </td>
+                                        <td width="16%">
                                             <span t-field="o.hr_attitude"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Proactiveness</p>
+                                        <td width="16%">
+                                            <p>Proactiveness:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.hr_proactiveness"/>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="25%">
-                                            <p>Office Discipline</p>
+                                        <td width="16%">
+                                            <p>Office Discipline:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.hr_office_discipline"/>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="16%" style="font-size:20px;">
+                                            <strong>TTL:</strong>
+                                        </td>
+                                        <td width="16%" style="font-size:20px;">
+                                            <strong>
+                                                <span t-field="o.hr_rating"/>
+                                            </strong>
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
                                         </td>
                                     </tr>
                                 </table>
                             </div>
-                            <h1 style="text-align: center;"><strong>CEO RATING</strong></h1>
+                            <div style="page-break-after: always;">
+                                <br/>
+                            </div>
+                            <h1 style="text-align: center;">
+                                <strong>CEO RATING</strong>
+                            </h1>
                             <div class="row">
-                                <table>
+                                <table style="border: 0px solid transparent !important;">
                                     <tr>
-                                        <td width="25%">
-                                            <p>Attendance</p>
+                                        <td width="16%">
+                                            <p>Attendance:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.ceo_attendance"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Compliance</p>
+                                        <td width="16%">
+                                            <p>Compliance:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.ceo_compliance"/>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="25%">
-                                            <p>Leaves</p>
+                                        <td width="16%">
+                                            <p>Leaves:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.ceo_leaves"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Office Decorum</p>
-                                        </td>
-                                        <td width="25%">
-                                            <span t-field="o.ceo_office_decorum"/>
-                                        </td>
                                     </tr>
                                     <tr>
-                                        <td width="25%">
-                                            <p>Attitude</p>
+                                        <td width="16%">
+                                            <p>Office Decorum:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
+                                            <span t-field="o.ceo_office_decorum"/>
+                                        </td>
+                                        <td width="16%">
+                                            <p>Attitude:</p>
+                                        </td>
+                                        <td width="16%">
                                             <span t-field="o.ceo_attitude"/>
                                         </td>
-                                        <td width="25%">
-                                            <p>Proactiveness</p>
+                                        <td width="16%">
+                                            <p>Proactiveness:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.ceo_proactiveness"/>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="25%">
-                                            <p>Office Discipline</p>
+                                        <td width="16%">
+                                            <p>Office Discipline:</p>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                             <span t-field="o.ceo_office_discipline"/>
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
                                         </td>
-                                        <td width="25%">
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="16%" style="font-size: 20px;">
+                                            <strong>TTL:</strong>
+                                        </td>
+                                        <td width="16%" style="font-size: 20px;">
+                                            <strong>
+                                                <span t-field="o.ceo_rating"/>
+                                            </strong>
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
+                                        </td>
+                                        <td width="16%">
                                         </td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="row" style="margin-top: 20px;">
+                                <h1 style="text-align: center;">GRAND TTL:
+                                    <span t-field="o.grand_ttl"/>
+                                </h1>
                             </div>
                         </div>
                     </div>

@@ -127,6 +127,9 @@
                                 <group class=" rate-result">
                                     <field name="ceo_rating" string="CEO Rating"/>
                                 </group>
+                                <group class=" rate-result">
+                                    <field name="grand_ttl" string="GRAND TTL:"/>
+                                </group>
                             </page>
                         </notebook>
                     </sheet>
