@@ -82,9 +82,9 @@
                                 </table>
 
                             </div>
-                            <h1 style="text-align: center;">
+                            <h2 style="text-align: center;">
                                 <strong>EMPLOYEE RATING</strong>
-                            </h1>
+                            </h2>
                             <div class="row">
                                 <table style="border: 0px solid transparent !important;">
                                     <tr style="height: 0px;">
@@ -141,9 +141,9 @@
                                     </tr>
                                 </table>
                             </div>
-                            <h1 style="text-align: center;">
+                            <h2 style="text-align: center;">
                                 <strong>MANAGER RATING</strong>
-                            </h1>
+                            </h2>
                             <div class="row">
                                 <table style="border: 0px solid transparent !important;">
                                     <tr>
@@ -218,9 +218,9 @@
                                     </tr>
                                 </table>
                             </div>
-                            <h1 style="text-align: center;">
+                            <h2 style="text-align: center;">
                                 <strong>HR RATING</strong>
-                            </h1>
+                            </h2>
                             <div class="row">
                                 <table style="border: 0px solid transparent !important;">
                                     <tr>
@@ -302,9 +302,9 @@
                             <div style="page-break-after: always;">
                                 <br/>
                             </div>
-                            <h1 style="text-align: center;">
+                            <h2 style="text-align: center;">
                                 <strong>CEO RATING</strong>
-                            </h1>
+                            </h2>
                             <div class="row">
                                 <table style="border: 0px solid transparent !important;">
                                     <tr>
@@ -385,7 +385,7 @@
                             </div>
                             <div class="row" style="margin-top: 20px;">
                                 <h1 style="text-align: center;">GRAND TTL:
-                                    <span t-field="o.grand_ttl"/>
+                                    <strong><span t-field="o.grand_ttl"/></strong>
                                 </h1>
                             </div>
                         </div>
